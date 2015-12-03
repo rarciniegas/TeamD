@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ADCF40F1-5B05-446C-AC3E-CD8B06A63C6F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TeamD</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DC006DD4BF7C69AA227655B375B9B9FA82AC620D</key>
+		<string>https://github.com/rarciniegas/TeamD.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TeamD.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DC006DD4BF7C69AA227655B375B9B9FA82AC620D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rarciniegas/TeamD.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DC006DD4BF7C69AA227655B375B9B9FA82AC620D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DC006DD4BF7C69AA227655B375B9B9FA82AC620D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TeamD</string>
+		</dict>
+	</array>
+</dict>
+</plist>
