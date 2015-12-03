@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TDDetailViewController"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TDDetailViewController">
+            <connections>
+                <outlet property="assetTypeButton" destination="whf-09-Z3D" id="Top-Bc-W7V"/>
+                <outlet property="cameraButton" destination="Lh7-YR-Dg8" id="yWr-CA-dPy"/>
+                <outlet property="dateLabel" destination="nda-eB-27J" id="qlB-Rf-Wys"/>
+                <outlet property="nameField" destination="n7s-ET-eLV" id="FnQ-wS-AQz"/>
+                <outlet property="nameLabel" destination="dXa-6p-gOR" id="DXU-2e-FBb"/>
+                <outlet property="serialNumberField" destination="IHX-r1-2dG" id="tT9-PQ-6Jb"/>
+                <outlet property="serialNumberLabel" destination="ADb-Sv-E3t" id="N1Z-yd-vTg"/>
+                <outlet property="toolbar" destination="gtW-pf-xpW" id="6LS-yM-Zhb"/>
+                <outlet property="valueField" destination="RHg-3o-phh" id="bqx-iW-jgP"/>
+                <outlet property="valueLabel" destination="9AY-u5-vR2" id="9CA-tb-xOy"/>
+                <outlet property="view" destination="kZW-X9-3ML" id="whV-a7-W3C"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="kZW-X9-3ML" customClass="UIControl">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -38,27 +52,50 @@
                     <rect key="frame" x="74" y="85" width="226" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="nQ7-eu-onU"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHX-r1-2dG">
                     <rect key="frame" x="74" y="123" width="226" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="WkA-gr-dVW"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RHg-3o-phh">
                     <rect key="frame" x="74" y="161" width="226" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Q7K-rz-0QX"/>
+                    </connections>
                 </textField>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gtW-pf-xpW">
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gtW-pf-xpW">
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="XHA-He-xie"/>
+                    </constraints>
                     <items>
-                        <barButtonItem systemItem="camera" id="Lh7-YR-Dg8"/>
-                        <barButtonItem title="Item" id="whf-09-Z3D"/>
+                        <barButtonItem systemItem="camera" id="Lh7-YR-Dg8">
+                            <connections>
+                                <action selector="takePicture:" destination="-1" id="B8I-Ss-Vuq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Item" id="whf-09-Z3D">
+                            <connections>
+                                <action selector="showAssetTypePicker:" destination="-1" id="hSG-HJ-wGN"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="310" y="715"/>
+            <connections>
+                <action selector="backgroundTapped:" destination="-1" eventType="touchUpInside" id="4Gf-MW-DiE"/>
+            </connections>
+            <point key="canvasLocation" x="326" y="712"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
